@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "msm_speedup/src",
+        "msm_mean",
+        "msm_heuristics",
+        "randomSamplesUCRArchive"
+    ]
+}

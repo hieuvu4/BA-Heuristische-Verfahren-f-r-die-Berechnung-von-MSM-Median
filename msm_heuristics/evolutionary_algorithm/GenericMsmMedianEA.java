@@ -4,13 +4,10 @@ import java.util.Arrays;
 import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
-// import MSMDistance class by Jana Holznigenkemper
 import MSMDistances.MSMDistance;
 
 /**
- * An evolutionary algorithm that trys to improve a random mean into a better one by
- * changing its value with a probability of 1/n into another value. 
- * The distance between time series is calculated with the MSM metric.
+ * generic-msm-median-ea
  */
 public class GenericMsmMedianEA {
     

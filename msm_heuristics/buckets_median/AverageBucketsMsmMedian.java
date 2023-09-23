@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.TreeSet;
 import MSMDistances.MSMDistance;
 
-
+/**
+ * average-buckets-msm-median
+ */
 public class AverageBucketsMsmMedian {
     
     private final double[][] timeseries;
@@ -48,6 +50,7 @@ public class AverageBucketsMsmMedian {
         }
         values = new double[bucketParts][];
 
+        // rotate array for easy access of the values for each bucket
         double[][] rotatedTs = rotateArrayCW(timeseries);
         int currentTsIndex = 0;
         // initialize values
@@ -103,6 +106,7 @@ public class AverageBucketsMsmMedian {
 
     }
 
+    // calculates mean
     public double[][] calc() {
         for(int i = 0; i < bucketParts; i++) {
             generateRandomBucketMean(partialTimeseries[i], i);
@@ -144,7 +148,7 @@ public class AverageBucketsMsmMedian {
 
     }
     
-
+    // generate new medians for each buckets, amount of random is the given variable amountRandom 
     private void generateRandomBucketMean(double[][] partialTimeseries, int bucketIndex) {
         ArrayList<double[]> randomPartMeans = new ArrayList<>();
         for(int i = 0; i < amountRandom; i++) {

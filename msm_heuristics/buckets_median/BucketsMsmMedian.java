@@ -9,7 +9,7 @@ import MSMMean.MsmMean;
 import MSMMean.Pair;
 
 /**
- * calculate exact msm median for each bucket , where each bucket has a max size of b
+ * buckets-msm-median
  */
 public class BucketsMsmMedian {
     
@@ -38,11 +38,13 @@ public class BucketsMsmMedian {
 
     }
 
+    // calc msm median for each buckets and adds them together
     public double[][] calc() {
         // List of list of ts with given bucket size
         int i = 0;
         ArrayList<double[]> bucketList = new ArrayList<>();
         while(i < minDimension) {
+            // bucket
             double[][] partialTs;
             if(bucketsize > minDimension-i) {
                 partialTs = new double[k][minDimension-i];

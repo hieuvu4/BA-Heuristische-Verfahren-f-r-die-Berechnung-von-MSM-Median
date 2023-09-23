@@ -8,10 +8,7 @@ import MSMDistances.MSMDistance;
 
 
 /**
- * Same as Randombuckets mean. Additionally, there is a variable called mergedRange.
- * If the last element of a bucket is in range of the element of the next bucket, the last element
- * will be overwritten by the new element of the next bucket, else the last element will be not 
- * overwritten and the new element will be added to the list.
+ * random-buckets-merge-msm-median
  */
 public class RandomBucketsMergeMsmMedian extends RandomBucketsMsmMedian{
 

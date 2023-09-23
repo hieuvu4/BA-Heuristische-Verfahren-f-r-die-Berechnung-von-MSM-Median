@@ -4,12 +4,7 @@ package euclidean_median_mean;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Creates a time series which represents the mean of given time series calculated with the 
- * euclidean distance. 
- * Calculates the cost between mean and all time series. There are only move costs at the beginning.
- * At the end, if the lengths of the time series are not equal, there are side merges with "small" moves.
- */
+
 public class EuclideanMedianMean {
 
     protected final double[][] timeseries;

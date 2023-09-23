@@ -3,18 +3,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-// import MSMDistance class by Jana Holznigenkemper
 import MSMDistances.MSMDistance;
 
 /**
- * Selects a random time series with minimum cost of a list of random time series which represents 
- * the mean ofgiven time series. The idea of this method is selecting an random element in the 
- * time series with a given bucket range. 
- * E.g.: if the bucket range is 2, we select a random element from 
- * timeseries[k][0], timeseries[k][1] and timeseries[k][2]. An element from timeseries[k][0] is 
- * selected and is added to the list. We start the process now from timeseries[k][1 +1] and repeat it
- * until we reach the range of the minimum length of a time series. Our first random mean is created 
- * and we add it to a list. We repeat this process amountRandom times.
+ * random-buckets-msm-median
  */
 public class RandomBucketsMsmMedian {
     

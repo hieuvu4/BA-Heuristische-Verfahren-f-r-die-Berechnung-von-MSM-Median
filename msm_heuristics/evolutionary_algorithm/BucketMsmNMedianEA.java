@@ -3,6 +3,10 @@ package evolutionary_algorithm;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * buckets-msm-n-median 
+ * same as buckets-msm-median. size of median has length of n
+ */
 public class BucketMsmNMedianEA extends BucketMsmMedianEA {
 
     public BucketMsmNMedianEA(double[][] timeseries, double c, int bucketradius, int generations, int meanLength) {

@@ -8,7 +8,7 @@ import MSMDistances.MSMDistance;
 import MSMMean.MsmMean;
 
 /**
- * 
+ * 3-msm-median
  */
 public class ThreeMsmMedian {
 

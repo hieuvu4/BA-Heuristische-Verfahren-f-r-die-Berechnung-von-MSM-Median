@@ -5,9 +5,11 @@ import java.util.Arrays;
 import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
-// import MSMDistance class by Jana Holznigenkemper
 import MSMDistances.MSMDistance;
 
+/**
+ * random-msm-median
+ */
 public class RandomMsmMedian {
     
     private final double[][] timeseries;
